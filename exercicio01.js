@@ -28,7 +28,7 @@
  * Agora responda as atividades abaixo
  */
 
-/* Exercícios de 01 a 12
+/* Questões de 01 a 12
  * 
  * Corrija os nomes das variáveis abaixo para se tornarem válidos e/ou respeitarem
  * as boas práticas de nomeação para variáveis (e não liguem para o "export" na frente. Mantenham ele):

@@ -4,9 +4,9 @@ As atividades deste módulo dizem respeito a variáveis em JavaScript. Sigam as 
 
 ## Para responder as atividades
 
-1. Cada aluno da turma possui uma "branch" cujo nome corresponde ao nome de usuário de cada um no github. Ao clicar no botão com o texto "master" acima da lista de arquivos deste projeto, aparece um menu onde você deve escolher a "branch" cujo nome é o mesmo que o nome de seu usuário no GitHub.
-![Botão para selecionar branches](./assets/branch-01.png) 
-![Menu para selecionar branches](./assets/branch-02.png) 
+1. Cada aluno da turma possui uma "branch" cujo nome corresponde ao nome de usuário de cada um no github. Ao clicar no botão com o texto "master" acima da lista de arquivos deste projeto, aparece um menu onde você deve escolher a "branch" cujo nome é o mesmo que o nome de seu usuário no GitHub.  
+![Botão para selecionar branches](./assets/branch-01.png)  
+![Menu para selecionar branches](./assets/branch-02.png)  
 
 2. Após selecionar sua branch, faça um dos dois passos abaixo (o resultado é o mesmo):
     - Aperte a tecla de ponto final no teclado, uma única vez
@@ -16,22 +16,22 @@ As atividades deste módulo dizem respeito a variáveis em JavaScript. Sigam as 
 
 3. Espere o VSCode online carregar por completo antes de mexer no projeto. Demora um pouco.
 
-4. Confirme se na parte de baixo a esquerda no VSCode online o nome da branch é o mesmo que o nome de seu usuário. Se não for, clique no nome que aparece na branch, e no menu que aparecer selecione a sua branch.
-![Botão para selecionar branches](./assets/branch-03.png) 
+4. Confirme se na parte de baixo a esquerda no VSCode online o nome da branch é o mesmo que o nome de seu usuário. Se não for, clique no nome que aparece na branch, e no menu que aparecer selecione a sua branch.  
+![Botão para selecionar branches](./assets/branch-03.png)  
 
 5. As instruções para as atividades se encontram na próxima sessão (Formato dos exercícios). Quando terminar, volte para o passo 6 desta sessão.
 
-6. Para salvar as modificações e enviar a atividade, clique no terceiro botão dos ícones na borda esquerda do VSCode para abrir um outro menu.
-![Menu de versionamento de código](./assets/commit-01.png) 
+6. Para salvar as modificações e enviar a atividade, clique no terceiro botão dos ícones na borda esquerda do VSCode para abrir um outro menu.  
+![Menu de versionamento de código](./assets/commit-01.png)  
 
-7. Feche a mensagem que aparece sobre o commit.
-![Aviso chato](./assets/commit-02.png) 
+7. Feche a mensagem que aparece sobre o commit.  
+![Aviso chato](./assets/commit-02.png)  
 
-8. Escreva uma mensagem informando quais exercícios você respondeu da lista. Exemplo: "Respondidos os exercícios 1, 4, 5 e 7".
-![Mensagem de commit](./assets/commit-03.png) 
+8. Escreva uma mensagem informando quais exercícios você respondeu da lista. Exemplo: "Respondidos os exercícios 1, 4, 5 e 7".  
+![Mensagem de commit](./assets/commit-03.png)  
 
-9. Clique no botão "Commit & push" e espere um pouco. Após o botão ficar desabilitado, a atividade foi enviada.
-![Botão de commit](./assets/commit-04.png) 
+9. Clique no botão "Commit & push" e espere um pouco. Após o botão ficar desabilitado, a atividade foi enviada.  
+![Botão de commit](./assets/commit-04.png)  
 
 ## Formato dos exercícios
 

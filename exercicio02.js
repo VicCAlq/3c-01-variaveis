@@ -121,30 +121,24 @@
  * deixam de ser acessíveis
  */
 // Respostas
-/* 01: margarida */ let escopo01 = 0
-/* 02: jaiminho */  let escopo02 = 0
-/* 03: valentina */ let escopo03 = 0
-/* 04: maria */     let escopo04 = 0
-/* 05: jose */      let escopo05 = 0
-/* 06: belarmino */ let escopo06 = 0
+/* 01: margarida */ let escopo01 = 76
+/* 02: jaiminho */  let escopo02 = 93
+/* 03: valentina */ let escopo03 = 114
+/* 04: maria */     let escopo04 = 83
+/* 05: jose */      let escopo05 = 86
+/* 06: belarmino */ let escopo06 = 113
 
 /** Questões 07 a 12
  * No mesmo escopo da referência acima, indique com true (verdadeiro) ou false (falso)
  * para as situações abaixo:
  */
 // Respostas
-/* O escopo de margarida consegue acessar o de joao */
-let escopo07 = null
-/* O escopo de enzo consegue acessar o de valentina */
-let escopo08 = null
-/* O escopo de valentina consegue acessar o de magda */
-let escopo09 = null
-/* O escopo de rosa consegue acessar o de violeta */
-let escopo10 = null
-/* O escopo de jaiminho consegue acessar o de joaquim */
-let escopo11 = null
-/* O escopo de baltazar consegue acessar o de onofre */
-let escopo12 = null
+/* 07: margarida acessa joao */   let escopo07 = true
+/* 08: enzo acessa valentina */   let escopo08 = false
+/* 09: valentina acessa magda */  let escopo09 = false
+/* 10: rosa acessa violeta */     let escopo10 = false
+/* 11: jaiminho acessa joaquim */ let escopo11 = true
+/* 12: baltazar acessa onofre */  let escopo12 = false
 
 /* NÃO MUDAR NADA DESTA LINHA EM DIANTE */
 export {

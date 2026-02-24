@@ -135,7 +135,7 @@
 // Respostas
 /* O escopo de margarida consegue acessar o de joao */
 <<<<<<< HEAD
-let escopo07 = false
+let escopo07 = true
 =======
 let escopo07 = false
 >>>>>>> 51878847714a5f992874f15a0b6d40722106ea1d
@@ -143,19 +143,19 @@ let escopo07 = false
 let escopo08 = false
 /* O escopo de valentina consegue acessar o de magda */
 <<<<<<< HEAD
-let escopo09 = true
+let escopo09 = false
 =======
 let escopo09 = true
 >>>>>>> 51878847714a5f992874f15a0b6d40722106ea1d
 /* O escopo de rosa consegue acessar o de violeta */
 <<<<<<< HEAD
-let escopo10 = true
+let escopo10 = false
 =======
 let escopo10 = true
 >>>>>>> 51878847714a5f992874f15a0b6d40722106ea1d
 /* O escopo de jaiminho consegue acessar o de joaquim */
 <<<<<<< HEAD
-let escopo11 = false
+let escopo11 = true
 =======
 let escopo11 = false
 >>>>>>> 51878847714a5f992874f15a0b6d40722106ea1d

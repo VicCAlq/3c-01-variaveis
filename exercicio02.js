@@ -1,163 +1,48 @@
-/** Assunto 02 - Escopo
- * Quaisquer valores nomeados que forem criados em um programa JavaScript existem em um 
- * determinado "escopo". Escopo é o termo que utulizamos para determinar a região 
- * do código onde um valor existe.
+/* Assunto 01 - Nomeação de variáveis
  *
- * Exemplos de valores nomeados são: variáveis, funções, objetos, classes, etc. Qualquer 
- * coisa no código para o qual você dê um nome a sua escolha.
+ * Variáveis em JavaScript podem ser de três tipos:
+ * 1. Variáveis que podem ter seu valor modificado. São criadas com o comando "let"
+ * 2. Variáveis que o valor não muda depois de criadas, também chamadas de 
+ *    "constantes". São criadas com o comando "const"
+ * 3. Variáveis que podem ter seu valor modificado mas tem escopo global. São 
+ *    criadas com o comando "var"
  *
- * Coisas como "if", "else", "switch", "return" não são valores, são palavras da sintaxe
- * do JavaScript, e não coisas nomeadas por você.
+ * Por questões de boas práticas, utilizamos apenas "let" e "const" para criar variáveis.
+ * Variáveis criadas com "var" são muitas vezes fonte de bugs, por isso evitaremos.
  *
- * Escopos são criados utilizando "chaves": { }
- * A chave de abertura "{" inicia o escopo
- * A chave de fechamento "}" encerra o escopo
+ * Nomes de variáveis podem conter apenas:
+ * 1. letras maiúsculas e minúsculas sem acentuação (também não pode cedilha)
+ * 2. números
+ * 3. Os símbolos $ e _ (cifrão e sublinhado)
+ *
+ * Nomes de variáveis também tem as seguintes regras:
+ * 1. Não pode começar com um número
+ * 2. Nomes compostos não podem ser separados por hífen (sinal de menos)
+ * 3. Nomes totalmente em maiúscula são usados apenas em contextos especiais, como para
+ *    representar um número como Pi: "const PI = 3.141592" ou "const E = 2.71"
+ * 4. Nomes compostos são escritos em "camelCase", exemplo: victorMatheusCavalcanti
+ * 5. Nomes de classes devem começar com letra maiúscula
+ * 6. Palavras que já são parte da sintaxe do JavaScript não podem ser utilizados como nomes de 
+ *    variáveis, eemplo: "let else" <- Errado, else já é uma palavra da sintaxe "if { } else { }"
  * 
- * Se um valor for criada dentro de um escopo, ele existe apenas até a chave 
- * de fechamento do escopo ao qual ele pertence. Exemplo:
- * {
- *   let bode = "Adalberto" <- "bode" é  criado aqui
- * } <- "bode" deixou de existir aqui 
- *
- * Tentar utilizar um valor fora de escopo resulta em erro:
- * {
- *   let bode = "Adalberto" <- "bode" é  criado aqui
- *   console.log(bode) <- Isso funciona normal
- * } <- "bode" deixou de existir aqui 
- * console.log(bode) <- Isso vai dar erro
- *
- * Escopos podem ter escopos internos. Não há um limite para isso.
- * Escopos internos podem acessar qualquer valor dos escopos externos a si.
- * Escopos externos NÃO podem acessar valores de escopos internos.
- * "Sempre podemos olhar de dentro pra fora, mas nunca de fora pra dentro".
- * Exemplo:
- * {
- *   const frutaFavorita = "Abacaxi"
- *   {
- *     const comidaFavorita = "Torta de limão"
- *     {
- *       const bebidaFavorita = "Suco de abacaxi"
- *       console.log(frutaFavorita) <- Funciona
- *       console.log(comidaFavorita) <- Funciona
- *       console.log(bebidaFavorita) <- Funciona
- *     }
- *     console.log(frutaFavorita) <- Funciona
- *     console.log(comidaFavorita) <- Funciona
- *     console.log(bebidaFavorita) <- Erro
- *   }
- *   console.log(frutaFavorita) <- Funciona
- *   console.log(comidaFavorita) <- Erro
- *   console.log(bebidaFavorita) <- Erro
- * }
- * console.log(frutaFavorita) <- Erro (frutaFavorita foi criada dentro de um escopo)
- * console.log(comidaFavorita) <- Erro
- * console.log(bebidaFavorita) <- Erro
- *
- * Outra particularidade é que como um valor existe apenas dentro de seu 
- * próprio escopo, isso significa que em um escopo fora de onde o valor é acessível,
- * você pode utilizar o mesmo nome para um valor totalmente diferente:
- *
- * {
- *   let helicoptero = "AAAAAHHHH"
- * }
- * {
- *   let helicoptero = "toc toc toc toc toc toc toc"
- * }
+ * Agora responda as atividades abaixo
  */
 
-/* REFERÊNCIA PARA AS QUESTÕES ABAIXO  */
-
-{
-    let joao = "João"
-    {
-        let maria = "Maria"
-        {
-            let margarida = "Margarida"
-        }
-        {
-            let rosa = "Rosa"
-            {
-                let violeta = "Violeta"
-            }
-        }
-    }
-    {
-        let jose = "José"
-    }
-    {
-        let joaquim = "Joaquim"
-        {
-            let jaime = "Jaime"
-            {
-                let jaiminho = "Jaiminho"
-            }
-        }
-    }
-}
-{
-    let valentina = "Valentina"
-    {
-        let magnolia = "Magnolia"
-    }
-    {
-        let magda = "Magda"
-    }
-    {
-        let belarmino = "Belarmino"
-        {
-            let baltazar = "Baltazar"
-        }
-        {
-            let onofre = "Onofre"
-        }
-    }
-}
-{
-    let enzo = "Enzo"
-}
-
-/** Questões 01 a 06
- * No escopo da referência acima, responda as linhas onde as variáveis abaixo
- * deixam de ser acessíveis
+/* Questões de 01 a 12
+ * 
+ * Corrija os nomes das variáveis abaixo para se tornarem válidos e/ou respeitarem
+ * as boas práticas de nomeação para variáveis (e não liguem para o "export" na frente. Mantenham ele):
  */
-// Respostas
-/* 01: margarida */ let escopo01 = 0
-/* 02: jaiminho */  let escopo02 = 0
-/* 03: valentina */ let escopo03 = 0
-/* 04: maria */     let escopo04 = 0
-/* 05: jose */      let escopo05 = 0
-/* 06: belarmino */ let escopo06 = 0
-
-/** Questões 07 a 12
- * No mesmo escopo da referência acima, indique com true (verdadeiro) ou false (falso)
- * para as situações abaixo:
- */
-// Respostas
-/* O escopo de margarida consegue acessar o de joao */
-let escopo07 = null
-/* O escopo de enzo consegue acessar o de valentina */
-let escopo08 = null
-/* O escopo de valentina consegue acessar o de magda */
-let escopo09 = null
-/* O escopo de rosa consegue acessar o de violeta */
-let escopo10 = null
-/* O escopo de jaiminho consegue acessar o de joaquim */
-let escopo11 = null
-/* O escopo de baltazar consegue acessar o de onofre */
-let escopo12 = null
-
-/* NÃO MUDAR NADA DESTA LINHA EM DIANTE */
-export {
-  escopo01,
-  escopo02,
-  escopo03,
-  escopo04,
-  escopo05,
-  escopo06,
-  escopo07,
-  escopo08,
-  escopo09,
-  escopo10,
-  escopo11,
-  escopo12,
-}
+// Resposta
+/* 01 */ export let meuNome = "Felizberto Adalberto"
+/* 02 */ export const gatoRajado = "Kiki"
+/* 03 */ export let quantidadeDeBolos = 75
+/* 04 */ export let meusColegas = ["Fulado", "Ciclano", "Beltrano"]
+/* 05 */ export const conducao = "Ônibus"
+/* 06 */ export class AlunoDoNave { constructor() {} }
+/* 07 */ export let golpeDoGoku = "Kamehameha"
+/* 08 */ export const tomEJerry = "Tom e Jerry"
+/* 09 */ export const ehSobreIsso = "E tá tudo bem"
+/* 10 */ export let meuEndereco = { rua: "Avenida sei lá", numero: 123, bairro: "Rouxinol Goiaba"}
+/* 11 */ export class OperacaoExplosiva { constructor () {} }
+/* 12 */ export class PersonagemFicticio { constructor() {} }
